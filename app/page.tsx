@@ -90,7 +90,7 @@ export default function Home() {
                 <Label htmlFor="country-name">Ülke Adı</Label>
                 <Input
                   id="country-name"
-                  placeholder="Örn: Turkey, Türkiye, Almanya"
+                  placeholder="Örn: Moldova, United States, Mozambique"
                   value={countryName}
                   onChange={(e) => setCountryName(e.target.value)}
                 />
@@ -109,6 +109,8 @@ export default function Home() {
                     <SelectItem value="fra">Fransızca</SelectItem>
                     <SelectItem value="ara">Arapça</SelectItem>
                     <SelectItem value="rus">Rusça</SelectItem>
+                    <SelectItem value="por">Portekizce</SelectItem>
+                    <SelectItem value="spa">İspanyolca</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -130,7 +132,7 @@ export default function Home() {
                 <Label htmlFor="country-code">Ülke Kodu</Label>
                 <Input
                   id="country-code"
-                  placeholder="Örn: TR, US, DE"
+                  placeholder="Örn: MD, US, MZ, NR, YT"
                   value={countryCode}
                   onChange={(e) => setCountryCode(e.target.value)}
                 />
@@ -149,6 +151,8 @@ export default function Home() {
                     <SelectItem value="fra">Fransızca</SelectItem>
                     <SelectItem value="ara">Arapça</SelectItem>
                     <SelectItem value="rus">Rusça</SelectItem>
+                    <SelectItem value="por">Portekizce</SelectItem>
+                    <SelectItem value="spa">İspanyolca</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -183,21 +187,23 @@ export default function Home() {
           )}
 
           <div className="bg-yellow-50 p-4 rounded-md border border-yellow-200">
-            <h3 className="text-lg font-medium text-yellow-800 mb-2">Örnek Ülkeler</h3>
-            <p className="text-yellow-700 mb-2">Bu API şu anda örnek olarak sadece aşağıdaki ülkeleri içermektedir:</p>
+            <h3 className="text-lg font-medium text-yellow-800 mb-2">Mevcut Ülkeler</h3>
+            <p className="text-yellow-700 mb-2">Bu API şu anda aşağıdaki ülkeleri içermektedir:</p>
             <ul className="list-disc list-inside text-yellow-700">
-              <li>Türkiye (Turkey, TR, TUR)</li>
-              <li>Amerika Birleşik Devletleri (United States, US, USA)</li>
-              <li>Almanya (Germany, DE, DEU)</li>
+              <li>Moldova (MD, MDA)</li>
+              <li>Amerika Birleşik Devletleri (US, USA)</li>
+              <li>Mayotte (YT, MYT)</li>
+              <li>Nauru (NR, NRU)</li>
+              <li>Mozambik (MZ, MOZ)</li>
             </ul>
           </div>
         </CardContent>
         <CardFooter className="flex flex-col gap-4">
           <div className="text-sm text-muted-foreground">
             <p>API Kullanımı:</p>
-            <code className="text-xs bg-muted p-1 rounded">GET /api/countries?country=Turkey&lang=tur</code>
+            <code className="text-xs bg-muted p-1 rounded">GET /api/countries?country=Moldova&lang=tur</code>
             <p className="mt-1">veya</p>
-            <code className="text-xs bg-muted p-1 rounded">GET /api/countries/TR?lang=tur</code>
+            <code className="text-xs bg-muted p-1 rounded">GET /api/countries/MD?lang=tur</code>
           </div>
         </CardFooter>
       </Card>
