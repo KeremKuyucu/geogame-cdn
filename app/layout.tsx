@@ -13,7 +13,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="tr">
+      <head>
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="https://raw.github.com/KeremKuyucu/GeoGame/main/assets/logo.png"
+        />
+        <meta name="theme-color" content="#4338ca" />
+      </head>
       <body>{children}</body>
     </html>
   )
