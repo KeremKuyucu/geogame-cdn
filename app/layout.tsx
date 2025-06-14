@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Kerem_KK Cdn Service',
+  title: 'GeoGame Cdn Service',
   description: 'Created with v0',
   generator: 'v0.dev',
 }
